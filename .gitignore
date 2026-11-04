@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Data — never commit raw DLD downloads (large files; re-downloadable)
+data/raw/*
+!data/raw/.gitkeep
+*.parquet
+spark-warehouse/
+metastore_db/
+derby.log
+
+# Secrets and local config
+.env
+*.env
+*.pem
+*.key
+.databrickscfg
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!example.tfvars
+.terraform.lock.hcl
+
+# Databricks Asset Bundles
+.databricks/
+
+# Power BI temp files
+~$*.pbix
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
